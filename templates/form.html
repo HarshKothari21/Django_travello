@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+<h1 style="text-align:center;color:blue">Calculator</h1>
+<form action="add" method="post">
+    {% csrf_token %}
+   Enter 1st number:<br> <input type="number" name="num1"><br>
+    Enter 2nd number: <br><input type="number" name="num2"><br><br>
+    <input type="submit">
+
+{% endblock %}
